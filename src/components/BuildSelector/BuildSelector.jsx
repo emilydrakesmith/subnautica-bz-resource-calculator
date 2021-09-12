@@ -9,7 +9,7 @@ import './BuildSelector.css';
 
 
 function BuildSelector() {
-    return <h1>Base Materials Needed h1</h1>;
+    return <h1>Build Selector h1</h1>;
 }
 
 export default BuildSelector;

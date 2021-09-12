@@ -62,12 +62,16 @@ The version history for this app will be organized in a four-digit **W.X.Y.Z** s
 * Initialize and build out a `basicMaterials.js` file in the `/src/data/materials` directory.
   * Note: I did not include Titanium here to avoid infinite loops in the app later.
 
-#### v 0.1.0.6 | 12 September 2021 | commit -- | Current Version
+#### v 0.1.0.6 | 12 September 2021 | commit 11490e86a8f35a24aabd03baf169c24fb3697030
 * Initialize new directories in `/src/components`: `/BuildSelector`, `/MaterialsNeeded`, and `/BaseMaterialsNeeded`
   * In each, initialize relevant `.jsx` and `.css` files with imports.
 * Initialize new directory in `/src/pages`: `/Home`
   * Initialize relevant `.jsx` and `.css` files with imports.
   * For the time being my app will just be one page.  Everything will be rendered in `Home.jsx`.  Later when I build it out to be a full-stack app this will be refactored.
+
+#### v 0.1.0.6 | 12 September 2021 | commit -- | Current Version
+* Import `BuildSelector.jsx` into `Home.jsx`
+
 
 [Back to Top](#top)
 

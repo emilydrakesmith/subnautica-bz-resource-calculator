@@ -50,9 +50,12 @@ The version history for this app will be organized in a four-digit **W.X.Y.Z** s
 #### v 0.1.0.2 | 12 September 2021 | commit 71e61a7ef099ad68271dabc95ad7fb6f9149923e
 * Removed unnecessary boilerplate code.
 
-#### v 0.1.0.3 | 12 September 2021 | commit -- | Current Version
+#### v 0.1.0.3 | 12 September 2021 | commit d92c22dc2bb2d9b999468ed5179f8b198c52c024
 * Initialize directories in `/src`: `/components`, `/data`, `/data/resources`, and `/pages`
 * Initialize and build out a `minerals.js` file in the `/src/data/resources` directory.
+
+#### v 0.1.0.4 | 12 September 2021 | commit -- | Current Version
+* Initialize and build out a `biologicals.js` file in the `/src/data/resources` directory.
 
 [Back to Top](#top)
 

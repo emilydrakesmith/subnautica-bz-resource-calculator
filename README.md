@@ -43,9 +43,13 @@ The version history for this app will be organized in a four-digit **W.X.Y.Z** s
 #### v 0.1.0.0 | 12 September 2021 | commit 9328d7bb76d5963bfdae060e5f196edc6d904add | Initial Commit
 * Initialize project using Create React App (CLI: `npx create-react-app`)
 
-#### v 0.1.0.1 | 12 September 2021 | commit 9328d7bb76d5963bfdae060e5f196edc6d904add | Initial Commit
+#### v 0.1.0.1 | 12 September 2021 | commit 8377d30f41f08ab77d9fdbeb2bebfa1d878d48d1
 * Stub up `README.md` file with basic sections and initial content.
 * Added a remote origin with GitHub @ https://github.com/mhsmith321/subnautica-bz-resource-calculator.git
+
+#### v 0.1.0.2 | 12 September 2021 | commit -- | Current Version
+* Removed unnecessary boilerplate code.
+
 
 [Back to Top](#top)
 

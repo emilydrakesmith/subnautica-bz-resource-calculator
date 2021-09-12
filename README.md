@@ -57,10 +57,17 @@ The version history for this app will be organized in a four-digit **W.X.Y.Z** s
 #### v 0.1.0.4 | 12 September 2021 | commit 7f8e2f1788477d3ed72a797570224273bdadc7d0
 * Initialize and build out a `biologicals.js` file in the `/src/data/resources` directory.
 
-#### v 0.1.0.5 | 12 September 2021 | commit -- | Current Version
+#### v 0.1.0.5 | 12 September 2021 | commit 120786881e1e6ea39c30dacc72f27c6276dfcad4
 * Initialize a directory `/src/data/materials`
 * Initialize and build out a `basicMaterials.js` file in the `/src/data/materials` directory.
   * Note: I did not include Titanium here to avoid infinite loops in the app later.
+
+#### v 0.1.0.6 | 12 September 2021 | commit -- | Current Version
+* Initialize new directories in `/src/components`: `/BuildSelector`, `/MaterialsNeeded`, and `/BaseMaterialsNeeded`
+  * In each, initialize relevant `.jsx` and `.css` files with imports.
+* Initialize new directory in `/src/pages`: `/Home`
+  * Initialize relevant `.jsx` and `.css` files with imports.
+  * For the time being my app will just be one page.  Everything will be rendered in `Home.jsx`.  Later when I build it out to be a full-stack app this will be refactored.
 
 [Back to Top](#top)
 

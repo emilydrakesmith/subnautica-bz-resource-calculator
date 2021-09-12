@@ -54,8 +54,13 @@ The version history for this app will be organized in a four-digit **W.X.Y.Z** s
 * Initialize directories in `/src`: `/components`, `/data`, `/data/resources`, and `/pages`
 * Initialize and build out a `minerals.js` file in the `/src/data/resources` directory.
 
-#### v 0.1.0.4 | 12 September 2021 | commit -- | Current Version
+#### v 0.1.0.4 | 12 September 2021 | commit 7f8e2f1788477d3ed72a797570224273bdadc7d0
 * Initialize and build out a `biologicals.js` file in the `/src/data/resources` directory.
+
+#### v 0.1.0.5 | 12 September 2021 | commit -- | Current Version
+* Initialize a directory `/src/data/materials`
+* Initialize and build out a `basicMaterials.js` file in the `/src/data/materials` directory.
+  * Note: I did not include Titanium here to avoid infinite loops in the app later.
 
 [Back to Top](#top)
 

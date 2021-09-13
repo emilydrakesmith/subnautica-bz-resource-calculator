@@ -10,53 +10,24 @@ import basicMaterials from '../../data/materials/basicMaterials';
 
 
 function BasicMaterialsSelector() {
-    const [enameledGlassCount, setEnameledGlassCount] = useState(0);
-    const [fiberMeshCount, setFiberMeshCount] = useState(0);
-    const [glassCount, setGlassCount] = useState(0);
-    const [lubricantCount, setLubricantCount] = useState(0);
-    const [plasteelIngotCount, setPlasteelIngotCount] = useState(0);
-    const [siliconeRubberCount, setSiliconeRubberCount] = useState(0);
-    const [titaniumIngotCount, setTitaniumIngotCount] = useState(0);
+    const [basicMaterialsCount, setBasicMaterialsCount] = useState({});                 // initialize state as an empty object
 
-    function changeStateRouter(event, material) {
-        const valueString = event.target.value;                 // get the current value in the box updated by the user
-        const value = parseInt(valueString);                    // convert the value from the previous line from string to number
-        let stateFunction;                                      // declare a variable to hold the appropriate function to update state
-        switch (material) {
-            case 'Enameled Glass':
-                stateFunction = setEnameledGlassCount;
-                break;
-            case 'Fiber Mesh':
-                stateFunction = setFiberMeshCount;
-                break;
-            case 'Glass':
-                stateFunction = setGlassCount;
-                break;
-            case 'Lubricant':
-                stateFunction = setLubricantCount;
-                break;
-            case 'Plasteel Ingot':
-                stateFunction = setPlasteelIngotCount;
-                break;
-            case 'Silicone Rubber':
-                stateFunction = setSiliconeRubberCount;
-                break;
-            case 'Titanium Ingot':
-                stateFunction = setTitaniumIngotCount;
-                break;
-            default:
-                console.log('heyoooo');                         // for troubleshooting
-        }
-        stateFunction(value);                                   // execute the appropriate function to update state
+    function updateCount(event, material) {
+        const {value} = event.target;                                                   // deconstruct input value from field changed
+        const valueNumber = parseInt(value);                                            // convert value from string to number data type
+        setBasicMaterialsCount(oldCount => (
+            {...oldCount, [material]: valueNumber}                                            // update state with the new key-value pair
+        ));
     }
 
     const basicMaterialsArray = basicMaterials.map(
         (basicMaterial, idx) => (
-            <li key={idx}>
+            <li key={`basic-material-${idx+1}`}>
                 <input  className='basic-material-input'
                         type='number'
+                        min={0}
                         name={basicMaterial.name}
-                        onChange={event => changeStateRouter(event, basicMaterial.name)}
+                        onChange={event => updateCount(event, basicMaterial.appId)}
                 />
                 <label htmlFor={basicMaterial.name}>{basicMaterial.name}</label>
             </li>
@@ -66,9 +37,7 @@ function BasicMaterialsSelector() {
     return (
         <section id='basic-materials-selector'>
             <h2>Basic Materials</h2>
-            <ul>
-                {basicMaterialsArray}
-            </ul>
+            <ul>{basicMaterialsArray}</ul>
         </section>
     );
 }

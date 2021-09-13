@@ -1,6 +1,7 @@
 const basicMaterials = [
     {
         name: 'Enameled Glass',
+        appId: 'enameledGlass',
         ingredients: [
             {
                 name: 'Glass',
@@ -24,6 +25,7 @@ const basicMaterials = [
     },
     {
         name: 'Fiber Mesh',
+        appId: 'fiberMesh',
         ingredients: [
             {
                 name: 'Creepvine Sample',
@@ -35,6 +37,7 @@ const basicMaterials = [
     },
     {
         name: 'Glass',
+        appId: 'glass',
         ingredients: [
             {
                 name: 'Quartz',
@@ -46,6 +49,7 @@ const basicMaterials = [
     },
     {
         name: 'Lubricant',
+        appId: 'lubricant',
         ingredients: [
             {
                 name: 'Creepvine Seed Cluster',
@@ -57,6 +61,7 @@ const basicMaterials = [
     },
     {
         name: 'Plasteel Ingot',
+        appId: 'plasteelIngot',
         ingredients: [
             {
                 name: 'Titanium Ingot',
@@ -74,6 +79,7 @@ const basicMaterials = [
     },
     {
         name: 'Silicone Rubber',
+        appId: 'siliconeRubber',
         ingredients: [
             {
                 name: 'Creepvine Seed Cluster',
@@ -85,6 +91,7 @@ const basicMaterials = [
     },
     {
         name: 'Titanium Ingot',
+        appId: 'titaniumIngot',
         ingredients: [
             {
                 name: 'Titanium',

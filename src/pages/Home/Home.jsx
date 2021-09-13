@@ -6,7 +6,7 @@ import React from 'react';
 /******* START: IMPORT LOCAL FILES *******/
 import './Home.css';
 import BaseMaterialsNeeded from '../../components/BaseMaterialsNeeded/BaseMaterialsNeeded';
-import BuildSelector from '../../components/BuildSelector/BuildSelector';
+import BasicMaterialsSelector from '../../components/BasicMaterialsSelector/BasicMaterialsSelector';
 import MaterialsNeeded from '../../components/MaterialsNeeded/MaterialsNeeded';
 /******* END: IMPORT LOCAL FILES *******/
 
@@ -14,7 +14,7 @@ import MaterialsNeeded from '../../components/MaterialsNeeded/MaterialsNeeded';
 function Home() {
     return (
         <>
-            <BuildSelector />
+            <BasicMaterialsSelector />
             <MaterialsNeeded />
             <BaseMaterialsNeeded />
         </>

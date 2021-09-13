@@ -72,9 +72,16 @@ The version history for this app will be organized in a four-digit **W.X.Y.Z** s
 #### v 0.1.0.6 | 12 September 2021 | commit eac8d6aaa2e304ca95fa99ed71f5ec6995f73524
 * Import `BuildSelector.jsx` into `Home.jsx`
 
-#### v 0.1.0.7 | 12 September 2021 | commit -- | Current Version
+#### v 0.1.0.7 | 13 September 2021 | commit bbc6ff0d6f25d40b6f1955599787dea8a0700d97
 * Populate *Basic Materials* as line items with numerical inputs.
 * Remove unnecessary styling from the `App.css` file.
+
+#### v 0.1.0.8 | 13 September 2021 | commit -- | Current Version
+* Create `useState()` hooks to take values from `BuildSelector` input fields.  Tested hooks and they work.
+* Create a router function with a `switch` statement to execute `onChange` callbacks functions.
+  * This is necessary because I don't have the callback functions in the same data store as what I'm mapping over and can't iterate through them in the same `.map()` method.
+* Change all occurrences in code of `BuildSelector` to `BasicMaterialsSelector` as those values are hardcoded in the file.
+  * I'll likely need to change this soon but it's organized like this now for proof of concept.
 
 
 [Back to Top](#top)

@@ -69,8 +69,12 @@ The version history for this app will be organized in a four-digit **W.X.Y.Z** s
   * Initialize relevant `.jsx` and `.css` files with imports.
   * For the time being my app will just be one page.  Everything will be rendered in `Home.jsx`.  Later when I build it out to be a full-stack app this will be refactored.
 
-#### v 0.1.0.6 | 12 September 2021 | commit -- | Current Version
+#### v 0.1.0.6 | 12 September 2021 | commit eac8d6aaa2e304ca95fa99ed71f5ec6995f73524
 * Import `BuildSelector.jsx` into `Home.jsx`
+
+#### v 0.1.0.7 | 12 September 2021 | commit -- | Current Version
+* Populate *Basic Materials* as line items with numerical inputs.
+* Remove unnecessary styling from the `App.css` file.
 
 
 [Back to Top](#top)

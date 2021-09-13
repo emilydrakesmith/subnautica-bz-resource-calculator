@@ -1,5 +1,5 @@
-const basicMaterials = {
-    enameledGlass: {
+const basicMaterials = [
+    {
         name: 'Enameled Glass',
         ingredients: [
             {
@@ -22,7 +22,7 @@ const basicMaterials = {
             }
         ]
     },
-    fiberMesh: {
+    {
         name: 'Fiber Mesh',
         ingredients: [
             {
@@ -33,7 +33,7 @@ const basicMaterials = {
             }
         ]
     },
-    glass: {
+    {
         name: 'Glass',
         ingredients: [
             {
@@ -44,7 +44,7 @@ const basicMaterials = {
             }
         ]
     },
-    lubricant: {
+    {
         name: 'Lubricant',
         ingredients: [
             {
@@ -55,7 +55,7 @@ const basicMaterials = {
             }
         ]
     },
-    plasteelIngot: {
+    {
         name: 'Plasteel Ingot',
         ingredients: [
             {
@@ -72,7 +72,7 @@ const basicMaterials = {
             },
         ]
     },
-    siliconeRubber: {
+    {
         name: 'Silicone Rubber',
         ingredients: [
             {
@@ -83,7 +83,7 @@ const basicMaterials = {
             }
         ]
     },
-    titaniumIngot: {
+    {
         name: 'Titanium Ingot',
         ingredients: [
             {
@@ -94,6 +94,6 @@ const basicMaterials = {
             }
         ]
     }
-}
+]
 
 export default basicMaterials;

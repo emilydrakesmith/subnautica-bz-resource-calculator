@@ -15,9 +15,19 @@ function BasicMaterialsSelector() {
     function updateCount(event, material) {
         const {value} = event.target;                                                   // deconstruct input value from field changed
         const valueNumber = parseInt(value);                                            // convert value from string to number data type
+        valueNumber ? updateState(material, valueNumber) : deleteFromState(material)
+    }
+
+    function updateState(key, value) {
         setBasicMaterialsCount(oldCount => (
-            {...oldCount, [material]: valueNumber}                                            // update state with the new key-value pair
+            {...oldCount, [key]: value}                                      // update state with the new key-value pair
         ));
+    }
+
+    function deleteFromState(key) {
+        const state = basicMaterialsCount;
+        delete state[key];
+        setBasicMaterialsCount(state);
     }
 
     const basicMaterialsArray = basicMaterials.map(

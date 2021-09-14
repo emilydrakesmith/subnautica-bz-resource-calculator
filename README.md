@@ -83,9 +83,13 @@ The version history for this app will be organized in a four-digit **W.X.Y.Z** s
 * Change all occurrences in code of `BuildSelector` to `BasicMaterialsSelector` as those values are hardcoded in the file.
   * I'll likely need to change this soon but it's organized like this now for proof of concept.
 
-#### v 0.1.0.9 | 13 September 2021 | commit -- | Current Version
+#### v 0.1.0.9 | 13 September 2021 | commit 3bfaf76302c9e70568ecc7262e800175bda43b8d
 * Refactor `BasicMaterialsSelector.jsx` to store state in a single object rather than individual variables.  I tested this and it works.
 * Re-initialize a `BuildSelector.jsx` file.  This will be where I attempt to use the same component to render multiple "build" sections of the app.
+
+#### v 0.1.0.10 | 13 September 2021 | commit -- | Current Version
+* Refactor `BasicMaterialsSelector.jsx` so that key-value pairs are removed from state when the value is set to zero.
+
 
 [Back to Top](#top)
 
